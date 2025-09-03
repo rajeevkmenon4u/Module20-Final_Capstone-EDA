@@ -73,3 +73,12 @@ Output variable (desired target):
 7. Customers with 3 or more NumOfProducts exited than with 2 or less products.
 8. Credit score Range of all the geography is faily similar . Score betwen 600- 700 exited and stayed as well.
 9. Customer with more credit score exited by large
+
+### 5. Outlier Detection
+## Observation
+1. CreditScore, Tenure,Balance, HasCrCard, IsActiveMember , EstimatedSalary all Columns are with in the Range
+2. Age & NumOfProducts Has Outliers
+3. Age Range should be between 6 To 70
+4. NumOfProducts Range should be -0.5 to 3.5
+5. After Analysis it looks like age greater than 70 looks valid.
+6. Customers with 4 products exited majority of them.
