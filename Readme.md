@@ -100,3 +100,12 @@ Output variable (desired target):
 2. Model Predicted 69% correct ( Precision > Recall is conservative)
 3. Model Predicted fewer - 38.8% (who actually exited)
 4. Closer to recall here, showing recall is the bottleneck.
+
+### 6. Made data more Balanced using SMOTE & class_weight='balanced' in Logistic Regression Model
+<img width="1222" height="497" alt="image" src="https://github.com/user-attachments/assets/41df7aa2-f5e9-44e8-adda-75efb5a927cc" />
+
+## Observation - (class_weight='balanced') Better
+1. Accuracy got reduced to 75% as data got balanced
+2. Model Predicted 44% correct ( Not conservative)
+3. Model Predicted more customer who got exited - 74% (who actually exited)
+
