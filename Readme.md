@@ -82,3 +82,21 @@ Output variable (desired target):
 4. NumOfProducts Range should be -0.5 to 3.5
 5. After Analysis it looks like age greater than 70 looks valid.
 6. Customers with 4 products exited majority of them.
+
+
+### 6. Sample Logistic Regression Model
+<img width="652" height="472" alt="image" src="https://github.com/user-attachments/assets/d73fba39-0041-4407-9764-e155fd99f201" />
+
+## Observation
+
+| Result            | Score          | 
+|-------------------|----------------|
+| Accuracy          | 0.83539        |
+| precision_score   | 0.69623        |
+| recall_score      | 0.38820        |
+| f1_score          | 0.49847        |
+
+1. Accuracy is high because of the data imbalance (most customers did not exit).
+2. Model Predicted 69% correct ( Precision > Recall is conservative)
+3. Model Predicted fewer - 38.8% (who actually exited)
+4. Closer to recall here, showing recall is the bottleneck.
