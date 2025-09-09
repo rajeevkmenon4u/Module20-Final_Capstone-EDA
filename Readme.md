@@ -30,14 +30,8 @@ Output variable (desired target):
 
 
 ### Exploratory Data Analysis
-### 1. Null check
+### Hypothesis & Observation After performing EDA
 
-<img width="667" height="718" alt="image" src="https://github.com/user-attachments/assets/62284bf7-fd0f-472d-af2c-2c7c7e7cdb0c" />
-
-### 2. Distribution Of Numerical Columns
-<img width="1237" height="783" alt="image" src="https://github.com/user-attachments/assets/96080942-aa1b-442a-823e-a70534acbdb3" />
-
-## Observation 
 1. CreditScore ranges from 350 to 850. More than 75% of the customers score is 710 and less. 50% of the cusomer score is less than 660. ##### which is Normal
 2. Age -- Average Customer base is 38 Years. 75 % of the cusotomers are 42 and less than that. Max is 92 % . it is Right skewed 
 3. Tenure -- 50% of the customer stays for 5 Years- Mean is 5 Years. Also more than 75% of the customer has tenure of 7 years or less. Max is 10.
@@ -46,22 +40,14 @@ Output variable (desired target):
 5. Balance -- Max is 250K. But 50% of the customer has 0 balance. 
 6. NumOfProducts - 75% of the customers have 2 products.
 7. Customers are almost evenly split between inactive and active members.
-
-### 3. Categorical Columns
-<img width="991" height="772" alt="image" src="https://github.com/user-attachments/assets/1c0117e6-6c0e-464e-9086-3a1967b54c80" />
-
-## Observation 
-1. Majority of customers are from France (57%), followed by Spain (21%) and Germany (20%).
-2. The dataset has more male customers (56.4%) than female customers (43.5%).
-
-### 4. Univariate , Bivariate  & Multivariate Analysis ( With / with our Target)
-
-<img width="1076" height="405" alt="image" src="https://github.com/user-attachments/assets/d20c309f-30b3-4378-acda-d447273d50be" />
-<img width="635" height="476" alt="image" src="https://github.com/user-attachments/assets/676c5d13-2a0f-428c-81ab-3b0b53b199c4" />
-<img width="655" height="523" alt="image" src="https://github.com/user-attachments/assets/3d662274-b8a3-458e-afa0-6a701ba49a4d" />
-
-
-## Observation 
+8. Majority of customers are from France (57%), followed by Spain (21%) and Germany (20%).
+9. The dataset has more male customers (56.4%) than female customers (43.5%).
+    
+##  Target Variable Analysis 
+1. CreditScore ranges from 350 to 850. More than 75% of the customers score is 710 and less. 50% of the cusomer score is less than 660. ##### which is Normal
+2. Age -- Average Customer base is 38 Years. 75 % of the cusotomers are 42 and less than that. Max is 92 % . it is Right skewed 
+   
+##  Univariate , Bivariate  & Multivariate Analysis ( With / with our Target)
 1. The dataset has more male customers (56.4%) than female customers (43.5%).
 2. Younger customer stayed while older customer exixted.
 3. Female Customer Exited by 27% compared to Male 15%
@@ -74,17 +60,26 @@ Output variable (desired target):
 8. Credit score Range of all the geography is faily similar . Score betwen 600- 700 exited and stayed as well.
 9. Customer with more credit score exited by large
 
-### 5. Outlier Detection
-## Observation
+## Outlier Detection Observation
 1. CreditScore, Tenure,Balance, HasCrCard, IsActiveMember , EstimatedSalary all Columns are with in the Range
 2. Age & NumOfProducts Has Outliers
 3. Age Range should be between 6 To 70
 4. NumOfProducts Range should be -0.5 to 3.5
 5. After Analysis it looks like age greater than 70 looks valid.
-6. Customers with 4 products exited majority of them.
+6. Customers with 4 products exited majority of them. - Need to Analyze further to understand 
 
 
-### 6. Sample Logistic Regression Model
+### Graphical Representation of Categorical Columns
+<img width="991" height="772" alt="image" src="https://github.com/user-attachments/assets/1c0117e6-6c0e-464e-9086-3a1967b54c80" />
+
+### Graphical Representation of Univariate , Bivariate  & Multivariate Analysis ( With / with our Target)
+
+<img width="1076" height="405" alt="image" src="https://github.com/user-attachments/assets/d20c309f-30b3-4378-acda-d447273d50be" />
+<img width="635" height="476" alt="image" src="https://github.com/user-attachments/assets/676c5d13-2a0f-428c-81ab-3b0b53b199c4" />
+### HeatMap
+<img width="655" height="523" alt="image" src="https://github.com/user-attachments/assets/3d662274-b8a3-458e-afa0-6a701ba49a4d" />
+
+### Sample Logistic Regression Model
 <img width="652" height="472" alt="image" src="https://github.com/user-attachments/assets/d73fba39-0041-4407-9764-e155fd99f201" />
 
 ## Observation
@@ -101,7 +96,7 @@ Output variable (desired target):
 3. Model Predicted fewer - 38.8% (who actually exited)
 4. Closer to recall here, showing recall is the bottleneck.
 
-### 6. Made data more Balanced using SMOTE & class_weight='balanced' in Logistic Regression Model
+### Made data more Balanced using SMOTE & class_weight='balanced' in Logistic Regression Model
 <img width="1222" height="497" alt="image" src="https://github.com/user-attachments/assets/41df7aa2-f5e9-44e8-adda-75efb5a927cc" />
 
 ## Observation - (class_weight='balanced') Better
