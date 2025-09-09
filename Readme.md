@@ -1,4 +1,4 @@
-# Capstone Project : Clasification Problem
+# Capstone Project : Classification  Problem
 **Overview**: The objective of the project is to develop a classification model that predicts which bank customers are likely to close their accounts. Additionally, the study aims to identify and analyze the key factors contributing to customer attrition.  
 ### Problem 1: Understanding the Data
 To gain a better understanding of the data, Analysing the data and performing EDA.
