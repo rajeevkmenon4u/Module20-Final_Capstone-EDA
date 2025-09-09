@@ -70,7 +70,7 @@ Output variable (desired target):
    - Majority of the data is of the customers with 1 & 2 products (46% & 51%) 
    - Remaining 3 % of data is distrubvuted between 3 & 4 Products.
    - 76% of the customer with 1 product Exited and that decreases when customer has 2 products ( stayed - 60%).
-- **Both Outlier looks normal `Age` & `NumOfProducts`**
+- **Both Outlier `Age` & `NumOfProducts` looks normal after detail analysis**
 
 
 ### Graphical Representation of Categorical Columns
